@@ -5,6 +5,9 @@
     <title>c0740950_6</title>
     <link href="css/default.css" rel="stylesheet" />
     <script type="text/javascript">
+        //function Mouseout(images) {
+          //  images.src = "choco2.JPG";
+        //}
 
         function trigger() {
             document.getElementsById("hover").addEventListener("mouseover", popup);
@@ -12,9 +15,13 @@
                 alert("welcome");
             }
         }
+        function MouseRollover(images) {
+            images.src = "choco1.JPG";
+            </script>
+
         <style>
         p{
-            font - size: 50px;
+            font-size: 50px;
             position: fixed;
             left: 550px;
             top: 300px;
@@ -22,38 +29,6 @@
 
         </style>
 
-       /* var rows = prompt("how many rows for your multiplication table?");
-        var cols = prompt("how many columns for your multiplication table?");
-
-        if (rows == "" || rows== null) {
-            rows = 10;
-        }
-
-        if (cols == "" || cols== null) {
-            cols = 10;
-        }
-
-        createTable(rows, cols);
-        function createTable(rows,cols)
-        {
-            var j = 1;
-            var output = "<table border='1' width='500' cellspacing='0' cellpadding='5'>";
-            for (i = 1; i <= rows; i++)
-            {
-                output = output + "<tr>";
-                while (j <= cols)
-                {
-                    output = output + "<td>" + i * j + "</td>";
-                    j = j + 1;
-                }
-                output = output + "</tr>";
-                j = 1;
-            }
-            output = output + "</table>";
-            document.write(output);
-
-
-        }*/
          
 
 
@@ -62,20 +37,19 @@
 </head >
             <body onload="trigger();">
                 <p id="hover"> welcme </p>
+
                 <script src="js/main.js"></script>
     <script language="javascript">
-        function MouseRollover(images) {
-            Image1.src = "choco1.JPEG";
-            function Mouseout(images) {
-                Image1.src = "choco2.JPEG";
-            }
+        
+           
 
         }
         <div align="center">
             <img src="choco2.JPEG" border="0px" width="650px" height="850px"
                 onMouseOver="MouseRollover(this)"
                 onMouseOut="MouseOut(this)" />
-            </div>
+        </div>
+        <p id="hover" > welcme agn </p>
 /*
                 var inputnumber = prompt("start starting number");
                 document.write(addNumbers(inputnumber));*/
