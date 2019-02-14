@@ -12,7 +12,7 @@
 
 
 
-    function addNumbers(j) {
+  /*  function addNumbers(j) {
         sum = 0;
        i = 0;
         while (i < j) {
@@ -23,4 +23,6 @@
         return sum;
 
       
-}
+}*/
+
+
